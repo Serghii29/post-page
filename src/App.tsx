@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.scss';
 import { PostsList } from './PostsList';
-import { ButtonRefresh } from './ButtonRefresh/ButtonRefresh';
+import { ButtonRefresh } from './ButtonRefresh';
+import './App.scss';
 
 const App: React.FC = () => (
-  <div className="container">
+  <div className="app-container">
     <ButtonRefresh />
     <PostsList />
   </div>

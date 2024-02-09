@@ -5,16 +5,8 @@ import './ButtonRefresh.scss';
 export const ButtonRefresh: React.FC = () => {
   const { refetch } = useGetPostsQuery();
 
-  const handlerRefresh = () => {
-    refetch();
-  };
-
   return (
-    <button
-      className="button-refresh"
-      type="button"
-      onClick={handlerRefresh}
-    >
+    <button className="button-refresh" type="button" onClick={refetch}>
       Refresh Posts
     </button>
   );

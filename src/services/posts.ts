@@ -8,7 +8,9 @@ export const postApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL }),
   endpoints: (builder) => ({
     getPosts: builder.query<IPost[], void>({
-      query: () => 'posts',
+      query: () => ({
+        url: 'posts',
+      }),
     }),
   }),
 });
