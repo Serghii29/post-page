@@ -21,10 +21,7 @@ export const PostsList: React.FC = React.memo(() => {
     }
   };
 
-  const handlerChangePage = useCallback((
-    event: React.ChangeEvent<unknown>,
-    page: number,
-  ) => {
+  const handlerChangePage = useCallback((event: React.ChangeEvent<unknown>, page: number) => {
     window.location.href = '#top';
     setCurrentPage(page);
   }, []);
@@ -45,7 +42,7 @@ export const PostsList: React.FC = React.memo(() => {
 
   return (
     <div>
-      {(isFetching || !posts?.length) ? (
+      {isFetching || !posts?.length ? (
         <Bars
           height="80"
           width="80"
