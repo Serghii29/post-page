@@ -1,6 +1,11 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import { PostsList } from './PostsList';
 
-const App: React.FC = () => <div className="App">Hello world</div>;
+const App: React.FC = () => (
+  <div className="container">
+    <PostsList />
+  </div>
+);
 
 export default App;
