@@ -1,14 +1,15 @@
 import React from 'react';
 import { useGetPostsQuery } from '../services/posts';
 import { PostItem } from '../PostItem';
+import './PostList.scss';
 
 export const PostsList: React.FC = () => {
   const { data } = useGetPostsQuery();
 
   return (
-    <div className="space-y-8">
+    <div className="list-container">
       {data?.map((post) => (
-        <div className="space-y-2">
+        <div className="item-container">
           <PostItem key={post.id} post={post} />
         </div>
       ))}
