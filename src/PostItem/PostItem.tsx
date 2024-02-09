@@ -9,6 +9,6 @@ type Props = {
 export const PostItem: React.FC<Props> = ({ post }) => (
   <>
     <h2 className="post-title">{post.title}</h2>
-    <p>{post.body}</p>
+    <p className="post-body">{post.body}</p>
   </>
 );

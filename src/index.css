@@ -4,7 +4,8 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: #252020;
+  scroll-behavior: smooth;
 }
 
 code {
